@@ -14,13 +14,13 @@ Sometimes you just want to get rid of something in a theme that you bought, but 
 
 [Locate Vanish](https://wordpress.org/plugins/vanish/) in the Wordpress Plugin directory and install in the usual fashion.
 
-- or -
+—or—
 
 Require `wpackagist-plugin/vanish` with [Composer](https://getcomposer.org/) from [WordPress Packagist](http://wpackagist.org/).
 
-- or - 
+—or—
 
-[Download a release](https://github.com/frebro/wp-vanish/releases) here and install manually. 
+[Download a release](https://github.com/frebro/wp-vanish/releases) and install manually. 
 
 ### Remove Vanish
 
