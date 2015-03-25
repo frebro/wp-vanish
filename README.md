@@ -4,7 +4,7 @@ This is a plugin for making elements "vanish" from your Wordpress site.
 
 ### How?
 
-By letting you specify CSS-selectors of elements to be hidden in your theme. A style block is inserted in <head> that hides all matching elements from view. They are still present in the source code, they will just be invisible. 
+By letting you specify CSS-selectors of elements to be hidden in your theme. A style block is inserted in `<head>` which hides all matching elements from view. They are still present in the source code, they will just be invisible. 
 
 ### Why?
 
