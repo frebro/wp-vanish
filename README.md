@@ -1,3 +1,5 @@
+![Unreleased](https://img.shields.io/badge/Status-Unreleased-red.svg)
+
 # Vanish for Wordpress
 
 This is a plugin for making elements "vanish" from your Wordpress site.
