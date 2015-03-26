@@ -38,6 +38,7 @@ function activate_vanish() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vanish-activator.php';
 	Vanish_Activator::activate();
 }
+register_activation_hook( __FILE__, 'activate_vanish' );
 
 /**
  * The code that runs during plugin deactivation.
@@ -47,8 +48,6 @@ function deactivate_vanish() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-vanish-deactivator.php';
 	Vanish_Deactivator::deactivate();
 }
-
-register_activation_hook( __FILE__, 'activate_vanish' );
 register_deactivation_hook( __FILE__, 'deactivate_vanish' );
 
 /**
