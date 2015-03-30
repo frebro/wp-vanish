@@ -53,19 +53,52 @@ class Vanish_Admin {
 
   }
 
-  public function add_theme_page() {
 
-    add_theme_page(
-      'Vanish',
-      'Vanish',
-      'edit_theme_options',
-      'vanish',
-      array( $this, 'add_theme_page_callback')
-    );
+  public function vanish_customize_register( $wp_customize ) {
+
+    $wp_customize->add_section( 'vanish' , array(
+      'title'       => __( 'Vanish', 'vanish' ),
+      'description' => __('Make elements vanish from your site. Select elements with CSS selectors. Separate multiple selectors with comma.', 'vanish')
+    ));
+
+    $wp_customize->add_setting( 'selectors', array(
+      'sanitize_callback' => array($this, 'vanish_sanitize_selectors')
+    ));
+
+    $wp_customize->add_control( 'selectors', array(
+      'type'    => 'text',
+      'section' => 'vanish',
+      'label'   => __('Selectors', 'vanish')
+    ));
+
   }
 
-  public function add_theme_page_callback() {
-    require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/partials/vanish-admin-display.php';
+  public function vanish_sanitize_selectors( $selectors ) {
+
+    // Explode multiple selectors
+    $selectors = explode( ',', $selectors );
+
+    // Sanitize selectors
+    if ( is_array( $selectors ) ) {
+
+      foreach ( $selectors as $selector ) {
+        $selector = explode( ' ', $selector );
+
+        if ( is_array( $selector ) ) {
+          $selector = array_map( 'sanitize_html_class', $selector );
+          $selector = implode( ' ', $selector );
+        } else {
+          $selector = sanitize_html_class( $selector );
+        }
+      }
+
+      $selectors = implode( ',', $selectors );
+
+    } else {
+      $selectors = sanitize_html_class( $selectors );
+    }
+
+    return $selectors;
   }
 
 }

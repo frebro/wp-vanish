@@ -15,7 +15,9 @@
 
 <div class="wrap">
   <h2>Vanish</h2>
-
   <form method="post" action="options.php">
+    <?php settings_fields( 'vanish_options' ); ?>
+    <?php do_settings_sections( 'vanish' ); ?>
+    <?php submit_button(); ?>
   </form>
 </div>
