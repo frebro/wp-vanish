@@ -14,9 +14,13 @@ Sometimes you just want to get rid of something in a theme that you bought, but 
 
 ### Screenshots
 
-![Vanish settings are available in the Theme Customizer.](https://github.com/frebro/wp-vanish/blob/master/assets/screenshot-1.png)
+![](https://github.com/frebro/wp-vanish/blob/master/assets/screenshot-1.png)
 
-![Example of generated styles.](https://github.com/frebro/wp-vanish/blob/master/assets/screenshot-2.png)
+_Vanish settings are available in the Theme Customizer._
+
+![](https://github.com/frebro/wp-vanish/blob/master/assets/screenshot-2.png)
+
+_Example of generated styles._
 
 ### Install Vanish
 
