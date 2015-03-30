@@ -20,11 +20,11 @@ The Vanish plugin lets you specify CSS-selectors of elements to be hidden in you
 
 1. Upload the plugin directory to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Navigate to `Admin > Appearance > Vanish` to start making stuff... vanish
+1. Navigate to `Admin > Appearance > Customize` and enter CSS selectors in the Vanish section to make stuff... vanish
 
 == Frequently Asked Questions ==
 
-= How do I find the selector for an element? =
+= How do I find the right selector for an element? =
 
 Take a look at [this blog post](https://dailypost.wordpress.com/2013/07/25/css-selectors/) for a simple guide to inspecting elements.
 
