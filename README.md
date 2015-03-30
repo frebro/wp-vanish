@@ -1,4 +1,7 @@
-![Unreleased](https://img.shields.io/badge/Status-Unreleased-red.svg)
+![](https://img.shields.io/wordpress/v/vanish.svg)
+![](https://img.shields.io/wordpress/plugin/v/vanish.svg)
+![](https://img.shields.io/wordpress/plugin/r/vanish.svg)
+![](https://img.shields.io/wordpress/plugin/dt/vanish.svg)
 
 # Vanish for Wordpress
 
