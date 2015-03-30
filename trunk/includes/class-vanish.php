@@ -167,6 +167,8 @@ class Vanish {
 
     $plugin_public = new Vanish_Public( $this->get_vanish(), $this->get_version() );
 
+    $this->loader->add_action( 'wp_head', $plugin_public, 'vanish_wp_head' );
+
   }
 
   /**

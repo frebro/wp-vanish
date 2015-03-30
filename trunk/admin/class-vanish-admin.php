@@ -61,11 +61,11 @@ class Vanish_Admin {
       'description' => __('Make elements vanish from your site. Select elements with CSS selectors. Separate multiple selectors with comma.', 'vanish')
     ));
 
-    $wp_customize->add_setting( 'selectors', array(
+    $wp_customize->add_setting( 'vanish_selectors', array(
       'sanitize_callback' => array($this, 'vanish_sanitize_selectors')
     ));
 
-    $wp_customize->add_control( 'selectors', array(
+    $wp_customize->add_control( 'vanish_selectors', array(
       'type'    => 'text',
       'section' => 'vanish',
       'label'   => __('Selectors', 'vanish')

@@ -53,4 +53,8 @@ class Vanish_Public {
 
   }
 
+  public function vanish_wp_head() {
+    echo '<style type="text/css"> /* Inserted by Vanish plugin https://wordpress.org/plugins/vanish/ */ '.get_theme_mod('vanish_selectors').' {display:none!important;visibility:hidden!important;}</style>';
+  }
+
 }
