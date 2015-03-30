@@ -27,3 +27,8 @@ Require `wpackagist-plugin/vanish` with [Composer](https://getcomposer.org/) fro
 ### Remove Vanish
 
 Changed your mind? Don't worry, just deactivate and remove the plugin. No changes were made to your theme and your vanished elements will be restored.
+
+### Todo
+
+- Localize
+- Live code preview in Customizer
