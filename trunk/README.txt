@@ -2,7 +2,7 @@
 Contributors: frebro
 Donate link: http://frebro.com
 Tags: code, css, template
-Requires at least: 1.2.0
+Requires at least: 3.4.0
 Tested up to: 4.1.1
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -27,6 +27,11 @@ The Vanish plugin lets you specify CSS-selectors of elements to be hidden in you
 = How do I find the selector for an element? =
 
 Take a look at [this blog post](https://dailypost.wordpress.com/2013/07/25/css-selectors/) for a simple guide to inspecting elements.
+
+== Screenshots ==
+
+1. Vanish settings are available in the Theme Customizer.
+2. Example of generated styles
 
 == Changelog ==
 

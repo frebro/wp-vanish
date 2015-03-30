@@ -58,7 +58,7 @@ class Vanish_Admin {
 
     $wp_customize->add_section( 'vanish' , array(
       'title'       => __( 'Vanish', 'vanish' ),
-      'description' => __('Make elements vanish from your site. Select elements with CSS selectors. Separate multiple selectors with comma.', 'vanish')
+      'description' => __('Select elements with CSS to make them vanish. Separate multiple selectors with comma. <a href="https://wordpress.org/plugins/vanish/faq/" target="_blank">[FAQ]</a>', 'vanish')
     ));
 
     $wp_customize->add_setting( 'vanish_selectors', array(
