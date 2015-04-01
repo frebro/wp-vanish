@@ -153,6 +153,7 @@ class Vanish {
     $plugin_admin = new Vanish_Admin( $this->get_vanish(), $this->get_version() );
 
     $this->loader->add_action( 'customize_register', $plugin_admin, 'vanish_customize_register' );
+    $this->loader->add_action( 'login_head', $plugin_admin, 'vanish_login_head' );
 
   }
 
