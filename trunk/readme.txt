@@ -35,5 +35,14 @@ Take a look at [this blog post](https://dailypost.wordpress.com/2013/07/25/css-s
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Code cleanup
+* Vanish applies to login pages
+
+= 1.0.0 =
 * Initial release
+
+== Upgrade Notice ==
+
+= 1.0.1 =
+Vanish now applies to login pages as well
