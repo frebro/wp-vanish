@@ -4,7 +4,7 @@ Donate link: http://frebro.com
 Tags: code, css, template
 Requires at least: 3.4.0
 Tested up to: 4.1.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,5 +35,14 @@ Take a look at [this blog post](https://dailypost.wordpress.com/2013/07/25/css-s
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Code cleanup
+* Vanish applies to login pages
+
+= 1.0.0 =
 * Initial release
+
+== Upgrade Notice ==
+
+= 1.0.1 =
+Vanish now applies to login pages as well

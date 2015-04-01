@@ -16,7 +16,7 @@
  * Plugin Name:       Vanish
  * Plugin URI:        https://wordpress.org/plugins/vanish/
  * Description:       A plugin for making elements "vanish" from your Wordpress site.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Fredrik Broman
  * Author URI:        http://frebro.com
  * License:           GPL-2.0+
