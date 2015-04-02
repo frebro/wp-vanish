@@ -127,4 +127,16 @@ class Vanish_Admin {
     echo '<style type="text/css"> /* Inserted by Vanish plugin https://wordpress.org/plugins/vanish/ */ '.get_theme_mod('vanish_selectors').' {display:none!important;visibility:hidden!important;}</style>';
   }
 
+  /**
+   * Add action links callback
+   *
+   * @since     1.0.2
+   * @param     array      $links     Default action links
+   */
+  public function vanish_add_action_links( $links ) {
+    return array_merge( $links, array(
+      'settings' => '<a href="'. get_admin_url(null, 'customize.php') .'">Settings</a>'
+    ));
+  }
+
 }

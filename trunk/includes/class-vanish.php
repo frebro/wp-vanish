@@ -66,8 +66,9 @@ class Vanish {
    *
    * @since    1.0.0
    */
-  public function __construct() {
+  public function __construct( $basename ) {
 
+    $this->basename = $basename;
     $this->vanish = 'vanish';
     $this->version = '1.0.1';
 
@@ -155,6 +156,8 @@ class Vanish {
     $this->loader->add_action( 'customize_register', $plugin_admin, 'vanish_customize_register' );
     $this->loader->add_action( 'login_head', $plugin_admin, 'vanish_login_head' );
 
+    $this->loader->add_filter( 'plugin_action_links_'.$this->get_basename(), $plugin_admin, 'vanish_add_action_links' );
+
   }
 
   /**
@@ -179,6 +182,17 @@ class Vanish {
    */
   public function run() {
     $this->loader->run();
+  }
+
+  /**
+   * The basename relative to the main plugin file, used to construct
+   * namespaced action and filter hooks.
+   *
+   * @since     1.0.2
+   * @return    string    The basename of the plugin.
+   */
+  public function get_basename() {
+    return $this->basename;
   }
 
   /**

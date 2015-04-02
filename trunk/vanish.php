@@ -67,7 +67,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-vanish.php';
  */
 function run_vanish() {
 
-	$plugin = new Vanish();
+	$plugin = new Vanish( plugin_basename(__FILE__) );
 	$plugin->run();
 
 }
