@@ -69,7 +69,7 @@ class Vanish {
   public function __construct( $basename ) {
 
     $this->basename = $basename;
-    $this->vanish = 'vanish';
+    $this->name = 'vanish';
     $this->version = '1.0.1';
 
     $this->load_dependencies();
@@ -136,7 +136,7 @@ class Vanish {
   private function set_locale() {
 
     $plugin_i18n = new Vanish_i18n();
-    $plugin_i18n->set_domain( $this->get_vanish() );
+    $plugin_i18n->set_domain( $this->get_name() );
 
     $this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -151,7 +151,7 @@ class Vanish {
    */
   private function define_admin_hooks() {
 
-    $plugin_admin = new Vanish_Admin( $this->get_vanish(), $this->get_version() );
+    $plugin_admin = new Vanish_Admin( $this->get_name(), $this->get_version() );
 
     $this->loader->add_action( 'customize_register', $plugin_admin, 'vanish_customize_register' );
     $this->loader->add_action( 'login_head', $plugin_admin, 'vanish_login_head' );
@@ -169,7 +169,7 @@ class Vanish {
    */
   private function define_public_hooks() {
 
-    $plugin_public = new Vanish_Public( $this->get_vanish(), $this->get_version() );
+    $plugin_public = new Vanish_Public( $this->get_name(), $this->get_version() );
 
     $this->loader->add_action( 'wp_head', $plugin_public, 'vanish_wp_head' );
 
@@ -199,11 +199,11 @@ class Vanish {
    * The name of the plugin used to uniquely identify it within the context of
    * WordPress and to define internationalization functionality.
    *
-   * @since     1.0.0
+   * @since     1.0.2
    * @return    string    The name of the plugin.
    */
-  public function get_vanish() {
-    return $this->vanish;
+  public function get_name() {
+    return $this->name;
   }
 
   /**
