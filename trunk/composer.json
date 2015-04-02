@@ -1,0 +1,24 @@
+{
+  "name": "frebro/vanish",
+  "type": "wordpress-plugin",
+  "license": "GPLv2 or later",
+  "description": "A plugin for making elements \"vanish\" from your Wordpress site.",
+  "homepage": "https://wordpress.org/plugins/vanish/",
+  "authors": [
+    {
+      "name": "Fredrik Broman",
+      "email": "frebro@gmail.com",
+      "homepage": "http://frebro.com"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/frebro/vanish/issues"
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "~1.0"
+  }
+}
