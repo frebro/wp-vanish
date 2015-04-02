@@ -17,11 +17,11 @@ Sometimes you just want to get rid of something in a theme that you bought, but 
 
 ### Screenshots
 
-![](https://github.com/frebro/wp-vanish/blob/master/assets/screenshot-1.png)
+![](https://ps.w.org/vanish/assets/screenshot-1.png)
 
 _Vanish settings are available in the Theme Customizer._
 
-![](https://github.com/frebro/wp-vanish/blob/master/assets/screenshot-2.png)
+![](https://ps.w.org/vanish/assets/screenshot-2.png)
 
 _Example of generated styles._
 
