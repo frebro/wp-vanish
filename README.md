@@ -15,8 +15,6 @@ By letting you specify CSS-selectors of elements to be hidden in your theme. A s
 
 Sometimes you just want to get rid of something in a theme that you bought, but you don't have the skill or capability to edit it's source code. Maybe because you don't have access to it, or because you don't want to risk your changes being destroyed in future updates.
 
-_Example of generated styles._
-
 ### Install Vanish
 
 [Locate Vanish](https://wordpress.org/plugins/vanish/) in the Wordpress Plugin directory and install in the usual fashion.
